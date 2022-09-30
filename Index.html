@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "CSS/styles.css">
+        <meta charset= "UTF-8">
+        <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Tennis player Survey Form</title>
+    </head>
+
+    <body>
+        <main id= "main">
+            <div id= "heading" class= "center">
+            <h1 id= "title" class=  "center">Yeon's Survey form
+            </h1>
+            <p id="subtitle" class = "center">
+                Who do you think is the G.O.A.T?
+            </p>
+            <div id= "main">
+                <form id= "survey form">
+                    <div id="input">
+                        <label id="name-label"><b>Name:</b></label>
+                        <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+                        <br>
+                        <label id="email-label"><b>Email:</b></label>
+                        <input id="Email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+                        <br>
+                        <label id="Gender-label"><b>Gender:</b></label>
+                        <input id="Gender" type="Gender" name="Gender" class="form" required placeholder="Gender"><br>
+                        <br>
+                        <label id="Age-label"><b>Age:</b></label>
+                        <input id="Age" type="Age" name="Age" class="form" min="5" max="99" required placeholder="5+">
+
+                    </div>
+
+                    <div id="dropdown-div"><br>
+                        <label id="dropdown">
+                            <strong>How often do you play tennis?</strong>
+                        </label><br>
+                        <select id="dropdown" name="playtime" class="form">
+                            <option value="option1">Less than once a week</option>
+                            <option value="option2">Once a week</option>      
+                            <option value="option3">Two to four times a week</option>
+                            <option value="option4">more than five times a week</option>    
+                        </select>
+                    </div>
+
+                    <div id="button-goat"><br>
+                        <label id="button-goat">
+                            <strong>Who is the G.O.A.T?</strong>
+                        </label><br>
+                        <input type="radio" calss="radio-inline" name="gender" value="Federer" >Roger Federer<br>
+                        <input type="radio" calss="radio-inline" name="gender" value="Nadal" >Rafael Nadal<br>
+                        <input type="radio" calss="radio-inline" name="gender" value="Djokovic" >Novak Djokovic<br>
+                    </div>
+
+                    <div id="checkbox-area"><br>
+                    <label id="checkbox-skills">What are the top three skills do you admire most about your choice of G.O.A.T?                       
+                    </label><br>
+                    <input type="checkbox" name="forehand" value="forehand">Forehand<br>
+                    <input type="checkbox" name="backhand" value="backhand">Bakchhand<br>
+                    <input type="checkbox" name="slice" value="slice" >Slice<br>
+                    <input type="checkbox" name="volley" value="volley" >Volley<br>
+                    <input type="checkbox" name="serve" value="serve" >Serve<br>
+                    <input type="checkbox" name="return" value="return" >Return<br>
+                    <input type="checkbox" name="footwork" value="footwork" >Footwork<br>
+                    <input type="checkbox" name="metality" value="mentality" >Mentality<br>
+                    </div>
+                    
+                    <div id= "ending"><br><br>
+                        <label id= "comments-label">
+                            Do you have any suggestion about this survey?
+                        </label><br>
+                        <textarea style= height:120px; class="form" placeholder="please feel free to write a review!">
+                        </textarea><br><br>
+                        <input id="submit" type="submit" class="form"> 
+                    </div>
+                </form>
+            </div>
+            </div>
+        </main>
+    </body>
+</html>
